@@ -6,6 +6,7 @@
   "scripts": {
     "build": "babel src -d lib",
     "prepublishOnly": "npm test && npm run build",
+    "prepare": "npm test && npm run build",
     "lint": "eslint src/ test/",
     "test": "mocha --recursive",
     "test:coverage": "nyc mocha --recursive",
