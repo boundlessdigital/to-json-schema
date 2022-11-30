@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ruzicka/to-json-schema.git"
+    "url": "git+https://github.com/boundlessdigital/to-json-schema.git"
   },
   "keywords": [
     "JSON",
