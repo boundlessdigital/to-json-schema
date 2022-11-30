@@ -360,4 +360,45 @@ describe('Objects', () => {
 
   })
 
+
+  it('should parse this into a proper object of strings', () => {
+    const options = {
+      objects: {arrays: {mode: 'all'}},
+    }
+
+    const instance = {
+      ports: [
+        '1',
+        '2-5',
+        '1_MA-MOD-8X10G_1',
+        '1_MA-MOD-8X10G_2-1_MA-MOD-8X10G_8',
+      ],
+    }
+
+    const schema = {
+      type: 'object',
+      properties: {
+        ports: {
+          type: 'array',
+          items: {
+            type: 'string',
+          },
+        },
+      },
+    }
+
+    testSchemaNormal(instance, schema)
+
+    // const schema = {
+    //   type: 'object',
+    //   properties: {
+    //     ports: {
+    //       type: 'array',
+    //       items: {
+    //         type: 'string',
+    //       },
+    //     },
+    //   },
+    // }
+  })
 })

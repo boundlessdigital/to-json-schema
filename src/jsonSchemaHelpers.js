@@ -60,17 +60,17 @@ const FORMAT_REGEXPS = {
 
   alpha: /^[a-zA-Z]+$/,
   alphanumeric: /^[a-zA-Z0-9]+$/,
-  'utc-millisec': input =>
-    (typeof input === 'string') && parseFloat(input) === parseInt(input, 10) && !isNaN(input), // eslint-disable-line no-restricted-globals
-  regex /* istanbul ignore next: not supporting regex right now */ (input) { // eslint-disable-line space-before-function-paren
-    let result = true
-    try {
-      new RegExp(input) // eslint-disable-line no-new
-    } catch (e) {
-      result = false
-    }
-    return result
-  },
+  // 'utc-millisec': input =>
+  //   (typeof input === 'string') && parseFloat(input) === parseInt(input, 10) && !isNaN(input), // eslint-disable-line no-restricted-globals
+  // regex /* istanbul ignore next: not supporting regex right now */ (input) { // eslint-disable-line space-before-function-paren
+  //   let result = true
+  //   try {
+  //     new RegExp(input) // eslint-disable-line no-new
+  //   } catch (e) {
+  //     result = false
+  //   }
+  //   return result
+  // },
   style: /\s*(.+?):\s*([^;]+);?/g,
   phone: /^\+(?:[0-9] ?){6,14}[0-9]$/,
 }
