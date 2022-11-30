@@ -39,11 +39,11 @@ const stringFormats = {
     valid: '16:41:41',
     invalid: '16:41:41.532Z',
   },
-  'utc-millisec': {
-    reverse: true,
-    valid: '-1234567890',
-    invalid: '16:41:41.532Z',
-  },
+  // 'utc-millisec': {
+  //   reverse: true,
+  //   valid: '-1234567890',
+  //   invalid: '16:41:41.532Z',
+  // },
   regex: {
     valid: '/a/',
     invalid: '/^(abc]/',
